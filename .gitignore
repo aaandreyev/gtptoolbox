@@ -5,7 +5,7 @@ node_modules/
 ### MeteorJS ###
 # default meteor build and local packages
 .meteor/local
-
+.meteor
 # meteor settings file
 settings.json
 
