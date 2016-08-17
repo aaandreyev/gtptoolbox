@@ -1,0 +1,75 @@
+<template name="mainPageView">
+    <div class="container">
+        <div class="row">
+            <div>
+              <div class="col s6 offset-s3">
+                <div class="valign">
+                  <section class="panel-container">
+                    <div id="card">
+                      <figure class="front card-panel">
+                        {{>infoNotify}}
+                        {{>loginView}}
+                        {{>recoverView}}
+                        {{>resetView}}
+                      </figure>
+                      <figure class="back card-panel">
+                        {{>infoNotify}}
+                        {{>registerView}}
+                        {{>registeredView}}
+                        {{>createPasswordView}}
+                      </figure>
+                    </div>
+                    <div id="text-card" class="col s6">
+                      <figure class="front">
+                        <div class="text-container">
+                        <h5>Don't have an account yet?</h5>
+                        <div class="signupDescription">
+                          <p></p>GTP ToolBox is a free service provided by GTP Schäfer GmbH.<br/>Signing up we will typically confirm your business role within 48 hours.
+                        </div>
+                        <div class="signupButton">
+                          <div class="row">
+                            <div class="col s10 offset-s1"><a class="waves-effect waves-light btn flip-signup white">SIGNUP</a></div>
+                          </div>
+                        </div>
+                        </div>
+                        <img class="bg" src="http://www.bardancinema.com/new/wp-content/uploads/2013/06/tech-1.jpg"/>
+                      </figure>
+                      <figure class="back text-card-flipped">
+                        <div class="text-container">
+                        <h5>Already have an account? </h5>
+                        <div class="signupDescription">
+                          <p></p>GTP ToolBox is a free service provided by GTP Schäfer GmbH.<br/>Signing up we will typically confirm your business role within 48 hours.
+                        </div>
+                        <div class="signinButton">
+                          <div class="row">
+                            <div class="col s10 offset-s1"><a class="waves-effect waves-light btn flip white">SIGNIN</a></div>
+                          </div>
+                        </div>
+                        </div>
+                        <img class="bg" src="http://www.bardancinema.com/new/wp-content/uploads/2013/06/tech-1.jpg"/>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="mailSimulation z-depth-3 hidden">
+      <p class='header'> New mail </p>
+      <div class="resetP hide">
+        <p class='message'>Let's pretend you've got and email,</p> 
+        <p class='message'> with reset Password link. And you 
+          <a class='goToReset'> click 
+            </a> it.
+        </p>
+      </div>
+        <div class="registered hide">
+          <p class='message'>Let's pretend you've got and email,</p> 
+          <p class='message'> with the confirmation link. And you 
+            <a class='goToPassword'> click 
+              </a> it.
+          </p>
+      </div>
+    </div>
+</template>

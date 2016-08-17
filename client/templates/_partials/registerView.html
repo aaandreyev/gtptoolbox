@@ -1,0 +1,64 @@
+<template name="registerView">
+    <div class="signup-panel col s10 offset-s1" style="padding-left: 0; padding-right: 0;">
+      <div class="signup-head">
+        <div class="signupLogo">
+          <div class="spinner">
+            <div class="preloader-wrapper active">
+              <div class="spinner-layer spinner-blue">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                  <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </div><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Nxt-logo-round-blue-transparent.png"/>
+          </div>
+        </div>
+      </div>
+      <div class="signupBody">
+        <div class="row">
+          <div class="col s12 input-field minMargin">
+            <input id="signup-firstname" required data-error="wrong" type="text" class="validate"/>
+            <label for="signup-firstname" data-error="wrong" class="left-align">First Name *</label>
+          </div>
+          <div class="col s12 input-field">
+            <input id="signup-lastname" required type="text" class="validate"/>
+            <label for="signup-lastname" class="left-align">Last Name *</label>
+          </div>
+          <div class="col s12 input-field">
+            <input id="signup-email" required type="email" class="validate"/>
+            <label for="signup-email" class="left-align">@Email</label>
+          </div>
+          <div class="col s12 input-field">
+            <input id="signup-company" required type="text" class="validate"/>
+            <label for="signup-company" class="left-align">Company</label>
+          </div>
+          <div class="col s12 input-field">
+            <input id="signup-position" required type="text" class="validate"/>
+            <label for="signup-position" class="left-align">Position</label>
+          </div>
+          <div class="col s12 input-field">
+            <input id="signup-phone" required type="number" class="validate"/>
+            <label for="signup-phone" class="left-align">Phone</label>
+          </div>
+        </div>
+      </div>
+      <div class="signupFooter">
+        <div class="terms">
+          <div class="col s6 left-align" style="padding-left: 0;">
+            <form action="#" class="">
+              <input type="checkbox" id="terms"/>
+              <label for="terms"><small>I accept the terms and data protection</small></label>
+            </form>
+          </div>
+          <div class="col s6 right-align" style="padding-right: 0;">
+            <a type="submit" class="waves-effect waves-light btn right-align" id="signup-submit">SIGNUP</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</template>

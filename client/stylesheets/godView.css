@@ -1,0 +1,43 @@
+.godView {
+  background: #fff;
+  height: 100vh;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow-y: scroll;
+  transition: all ease 0.4s;
+}
+.godView .collapsible {
+  box-shadow: none;
+  border-right: none;
+  border-left: none;
+}
+
+.godView .collapsible-body {
+    margin-top: 9px;
+    padding-bottom: 50px;
+}
+.godView .collapsible-body p {
+    padding-top: 6px;
+    padding-bottom: 3px;
+}
+.godView ul {
+    padding-left: 0px;
+}
+
+.godView .actions {
+    padding-top: 12px;
+}
+.godView .btn-action {
+    padding: 4px 8px 4px 8px;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.allow {
+    background: #4caf50;
+}
+
+.deny {
+    background: #ef5350;
+}

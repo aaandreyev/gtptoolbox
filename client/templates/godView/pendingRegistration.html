@@ -1,0 +1,24 @@
+<template name="pendingRegisrations">
+  <li>
+    <div class="collapsible-header"><i class="material-icons">perm_identity</i><strong>{{profile.firstname}} {{profile.lastName}}</strong> {{profile.date}}</div>
+    <div class="collapsible-body">
+      <p>Name: <strong>{{profile.firstname}} {{profile.lastname}}</strong></p>
+      <p>Company: <strong>{{profile.company}}</strong></p>
+      <p>Email: <strong>{{profile.email}}</strong></p>
+      <p>Position: <strong>{{profile.position}}</strong></p>
+      <P>Phone: <strong>{{profile.phone}} </strong></P>
+      <p>Reg. date: <strong>{{profile.date}}</strong></p>
+      <div class="col s12">
+        <div class="actions">
+          <div class="col s6 right-align">
+            <span class="btn-action allow" id="btn-allow">Allow</span>
+          </div>
+          <div class="col s6 left-align">
+            <span class="btn-action deny" id="btn-deny">Deny</span>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </li>
+</template>

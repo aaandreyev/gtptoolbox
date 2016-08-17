@@ -1,0 +1,33 @@
+<template name="godView">
+     <div class="col s10 offset-s1 center-align">
+    <p id="godHeader">God View</p>
+  </div>
+  <div class="row">
+    <div class="col s10 offset-s1">
+      <div class="sect">
+        <h5>Pending registrations</h5>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <ul data-collapsible="accordion" class="collapsible">
+      {{#each pendingRegs}}
+        {{>pendingRegisrations}}
+      {{/each}}
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col s10 offset-s1">
+      <div class="sect">
+        <h5>Registered users</h5>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <ul data-collapsible="accordion" class="collapsible">
+      {{#each registeredUsers}}
+        {{>pendingRegisrations}}
+      {{/each}}
+    </ul>
+  </div>
+</template>

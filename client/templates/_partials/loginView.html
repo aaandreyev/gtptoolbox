@@ -1,0 +1,46 @@
+<template name="loginView">
+    <div class="login-panel col s8 offset-s2">
+      <div class="login-head">
+        <div class="loginLogo">
+          <div class="spinner">
+            <div class="preloader-wrapper active">
+              <div class="spinner-layer spinner-blue">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                  <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </div><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Nxt-logo-round-blue-transparent.png"/>
+          </div>
+        </div>
+      </div>
+      <div class="login-body">
+        <div class="row">
+          <div class="col s12 input-field">
+            <input id="email" type="email" class="validate"/>
+            <label for="email" class="left-align">@Email</label>
+          </div>
+          <div class="col s12 input-field">
+            <input id="password" type="password" class="validate"/>
+            <label for="password" class="left-align">*Password</label>
+          </div>
+          <div class="col s12 right-align"><a class="right-align forgottenPassword"><small>Forgotten password?</small></a></div>
+        </div>
+      </div>
+      <div class="login-footer">
+        <div class="row">
+          <div class="col s6">
+            <form action="#" class="left-align">
+              <input type="checkbox" id="rememberMe"/>
+              <label for="rememberMe"><small>Remember me</small></label>
+            </form>
+          </div><a class="waves-effect waves-light btn right-align" id="btn-login">LOGIN</a>
+        </div>
+      </div>
+    </div>
+</template>

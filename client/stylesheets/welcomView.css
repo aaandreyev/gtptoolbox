@@ -1,0 +1,24 @@
+.welcomeView .options span{
+    font-weight: 400;
+    font-size: 18px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    color: #40c4ff;
+    transition: all ease 0.42s;
+}
+
+.welcomeView .options span:hover {
+    background:  #40c4ff;
+    color: white;
+    
+}
+.welcomeView #header{
+    font-weight: 200 !important;
+    color: #444;
+    font-size: 50px;
+}
+
+.welcomeView .options {
+    padding-top: 10px;
+}

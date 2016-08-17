@@ -1,0 +1,501 @@
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#app {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.mainPage {
+    height: 100vh;
+    transition: all ease 0.4s;
+}
+
+.mainPage .godviewIcon {
+    position: absolute;
+    right: 2%;
+    top: 6%;
+    color: #999;
+    tansition: all ease 0.4s;
+}
+
+.mainPage .godviewIcon i {
+    transition: all ease 0.3s;
+}
+
+.mainPage .godviewIcon i:hover {
+    font-size: 25px !important;
+    transform: rotateZ(-90deg);
+}
+
+.panel-container {
+    width: 100%;
+    min-height: 420px;
+    max-height: 650px;
+    position: relative;
+    perspective: 800px;
+    transition: all ease 0.45s;
+}
+
+.login-head {
+    padding-top: 5%;
+}
+
+.login-head img,
+.signup-head img,
+.forgotten-head img,
+.createPassword-head img,
+.resetPassword-head img,
+.createPassword-head img,
+.regSuccess-head img
+{
+    width: 50px;
+    height: 50px;
+    margin-top: -0.4%;
+}
+
+.spinner {
+  transition: all ease 0.4s;
+}
+
+.preloader-wrapper {
+    position: absolute !important;
+}
+
+.login-body {
+    margin-top: 6%;
+}
+
+.login-body small {
+    color: grey;
+    font-weight: 400;
+    margin-top: -9px;
+}
+
+.login-body label {
+    font-weight: 400;
+}
+
+.login-footer {
+    margin-top: 19%;
+}
+
+.login-footer a {
+    background: #40c4ff;
+}
+
+#card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    right: 0px;
+    padding: 0;
+    margin: 0;
+    transition: all ease 1s;
+    transform-style: preserve-3d;
+    oveflow: hidden;
+}
+
+.login-panel {
+    transition: all ease 0.4s;
+}
+
+.signup-panel .terms {
+    margin: 0 -10px 0 -10px;
+    padding-bottom: 30px;
+}
+
+.signup-panel {
+    height: 100%;
+}
+.signup-panel .signupFooter label {
+    line-height: 17px;
+    margin-top: -5px;
+}
+
+.forgottenPassword-panel {
+    position: relative;
+    height: 100%;
+    padding-top: 44px !important;
+    transition: all ease 0.8s;
+}
+
+.forgottenPassword-panel h5 {
+    color: #555;
+    font-weight: 300;
+    margin-left: 9px;
+}
+
+.forgottenPassword-panel .forgotten-head {
+    padding-top: 10%;
+}
+
+.forgottenPassword-panel .forgotten-body {
+    margin-top: 18%;
+}
+
+.forgottenPassword-panel .forgotten-footer {
+    padding-top: 5%;
+    color: #999;
+}
+
+.forgottenPassword-panel .forgotten-footer a {
+    margin-bottom: 17%;
+}
+
+.forgottenPassword-panel .forgotten-footer p {
+    color: #40c4ff;
+}
+
+.forgottenPass {
+    transform: translateY(-102%) !important;
+}
+
+.createPassword-panel {
+    position: relative;
+    height: 100%;
+    transition: all ease 0.8s;
+}
+
+.createPassword-panel h5 {
+    color: #555;
+    font-weight: 300;
+    margin-left: 9px;
+}
+
+.createPassword-panel .createPassword-head {
+    padding-top: 10%;
+}
+
+.createPassword-panel .createPassword-body {
+    margin-top: 18%;
+}
+
+.createPassword-panel .createPassword-footer {
+    padding-top: 5%;
+    color: #999;
+}
+
+.createPassword-panel .createPassword-footer a {
+    margin-bottom: 17%;
+}
+
+.createPassword-panel .createPassword-footer p {
+    color: #40c4ff;
+}
+
+.createPassword {
+    transform: translateY(-234%) !important;
+}
+
+.registered-panel {
+    position: relative;
+    height: 100%;
+    transition: all ease 0.8s;
+    transform: translateY(5%);
+}
+
+.registered-panel h5 {
+    color: #555;
+    font-weight: 300;
+    margin-left: 9px;
+}
+
+.registered-panel .regSuccess-head {
+    padding-top: 10%;
+}
+
+.registered-panel .regSuccess-body {
+    padding-top: 10%;
+}
+
+.registered-panel .regSuccess-footer {
+    padding-top: 5%;
+    color: #999;
+}
+
+.registered-panel .regSuccess-footer a {
+    margin-bottom: 17%;
+}
+
+.registered-panel .regSuccess-body p {
+    color: #555;
+    font-weight: 300;
+}
+
+.regSuccess {
+    transform: translateY(-125%) !important;
+}
+
+.resetPassword-panel {
+    position: relative;
+    height: 100%;
+    transition: all ease 0.8s;
+    transform: translateY(10%);
+}
+
+.resetPassword-panel h5 {
+    color: #555;
+    font-weight: 300;
+    margin-left: 9px;
+}
+
+.resetPassword-panel .resetPassword {
+    padding-top: 10%;
+}
+
+.resetPassword-panel .resetPassword {
+    margin-top: 18%;
+}
+
+.resetPassword-panel .resetPassword {
+    padding-top: 5%;
+    color: #999;
+}
+
+.resetPassword-panel .resetPassword a {
+    margin-bottom: 17%;
+}
+
+.resetPassword-panel .resetPassword p {
+    color: #40c4ff;
+}
+
+.resetPassword {
+    transform: translateY(-188%) !important;
+}
+
+#card .back {
+    transform: rotateY(-180deg);
+    background: white;
+}
+
+#card .back .input-field {
+    padding: 0;
+    margin: 0;
+}
+
+#text-card {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0px;
+    padding: 0px;
+    margin: 0px;
+    transition: all ease 1.3s;
+    transform-style: preserve-3d;
+}
+
+#text-card .front {
+    background: #40c4ff;
+    margin: 0 0 0 50%;
+    padding: 25px 12px 8px 12px;
+}
+
+#text-card h5 {
+    margin: 10px 0 0 0;
+    font-weight: 400;
+    color: white;
+}
+
+#text-card .signupDescription {
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 25%;
+    color: #555;
+}
+
+#text-card .front .signupButton {
+    padding-top: 30%;
+}
+
+#text-card .front .signupButton a {
+    color: #40c4ff;
+}
+
+#card figure {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+#text-card figure {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    transition: all ease 0.5s;
+    position: absolute;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+#text-card .back {
+    background: #40c4ff;
+    margin: 0 0 0 -50%;
+    padding: 25px 12px 8px 12px;
+}
+
+#text-card .back .signinButton {
+    padding-top: 30%;
+}
+
+#text-card .back .signinButton a {
+    color: #40c4ff;
+}
+
+.text-card-flipped {
+    transform: rotateY(180deg);
+}
+
+#text-card.text-flipped {
+    transform: translateX(-99%);
+}
+
+#card.flipped {
+    transform: rotateY(180deg) translateX(-25%);
+}
+
+.valign {
+    padding: 20% 0 0 0;
+}
+
+#card .front {
+    transform: translateX(-25%);
+}
+
+.input-field input {
+    color: #444;
+    font-weight: 400;
+}
+
+.info-notify {
+    position: absolute;
+    width: 150%;
+    z-index: 30;
+    height: 38px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #e57373;
+    padding: 2px 2px 2px 2px;
+    transform: translateY(-38px);
+    animation-duration: 0.5s;
+    transition: all ease 0.3s;
+}
+
+.info-notify.hidden {
+    transform: translateY(0px);
+}
+
+.info-notify i {
+    transform: translateX(-30%);
+    z-index: 31;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.info-notify #message {
+    margin-top: 8px;
+    position: absolute;
+    z-index: 31;
+    font-weight: 300;
+}
+.mailSimulation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 18%;
+    width: 24%;
+    background: white;
+    border-radius: 2px;
+    transition: all ease 0.35s;
+    padding: 15px;
+}
+
+.mailSimulation.hidden {
+    transform: translateY(100%);
+}
+
+.mailSimulation .header {
+    font-size: 25px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 8px !important;
+}
+
+.mailSimulation .message {
+    margin:0 0 5px 0;
+    font-weight: 300;
+}
+
+.goToReset {
+    cursor: pointer;
+}
+
+.homePage {
+    
+}
+
+.homePage #header {
+    font-size: 35px !important;
+    font-weight: 300;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.homePage .options {
+    padding-top: 30px;
+}
+
+.text-container {
+  z-index: 20;
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+  object-fit: cover;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0.13;
+  
+}
+
+#godHeader {
+    font-size: 26px !important;
+    font-weight: 300;
+    color: #40c4ff;
+    padding-top: 24px;
+}

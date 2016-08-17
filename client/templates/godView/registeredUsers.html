@@ -1,0 +1,13 @@
+<template name="registeredUsers">
+  <li>
+    <div class="collapsible-header"><i class="material-icons">perm_identity</i><strong>{{profile.firstname}} {{profile.lastName}} </strong>{{profile.date}}</div>
+    <div class="collapsible-body">
+      <p>Name: <strong>{{profile.firstname}} {{profile.lastname}}</strong></p>
+      <p>Company: <strong>{{profile.company}}</strong></p>
+      <p>Email: <strong>{{profile.email}}</strong></p>
+      <p>Position:<strong> {{profile.position}}</strong></p>
+      <P>Phone: <strong>{{profile.phone}}r</strong></P>
+      <p>Reg. date: <strong>{{profile.date}}</strong></p>
+    </div>
+  </li>
+</template>
